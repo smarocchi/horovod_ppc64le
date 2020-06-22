@@ -9,8 +9,9 @@ CMD ["/bin/bash"]
 
 ENV LANG=en_US.UTF-8
 
-RUN yum -y groupinstall "Development tools" && \
-    yum -y install epel-release \
+RUN yum -y groupinstall "Development tools" 
+
+RUN yum -y install epel-release \
                    bzip2 \ 
                    gzip \
                    tar \
